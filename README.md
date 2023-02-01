@@ -6,7 +6,7 @@ This is a very crude API. I'm mainly using it to turn a light strip on and off.
 I first wrote this as [govee-lan-server](https://github.com/20goto10/govee-lan-server) in Node.js but I ran into some problems with the library under the hood. I figured I could write this quicker than I could debug that library (and I did). This README is mostly copied from the Node original.
 
 # What it does
-Govee-lan-server is a lightweight web server that can handle a few simple actions for controlling one or more Govee lights. This uses their new local LAN API, via RhinoMcd's [govee-lan-api](https://github.com/Joery-M/Govee-LAN-Control) Python library. It does NOT use Govee's remote API or BLE; it must run within the device's LAN.
+Govee-lan-server is a lightweight web server that can handle a few simple actions for controlling one or more Govee lights. This uses their new local LAN API, via RhinoMcd's [govee-lan-api](https://github.com/Rhinomcd/govee-lan-api) Python library. It does NOT use Govee's remote API or BLE; it must run within the device's LAN.
 
 I wanted an always-on event listener to reduce latency caused by the startup "discovery" phase. (The Node version does that successfully; the Python version rediscovers on every request, for the time being, but the latency is not bad.)
 
