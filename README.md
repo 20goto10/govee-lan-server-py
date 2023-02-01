@@ -22,10 +22,11 @@ Don't run this on a publicly accessible server, unless you know what you're doin
 
 # How to do it
 
-0. Prereqs-- you need Python
+0. Prereqs-- you need Python 3.10 or higher, the Flask library (simple HTTP server) and govee-lan-api (which is doing the work here)
 ```
 git clone https://github.com/20goto10/govee-lan-server-py
 cd govee-lan-server-py
+pip install flask
 pip install govee-lan-api
 cp config.json.sample config.json
 ```
