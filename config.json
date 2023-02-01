@@ -1,0 +1,7 @@
+{
+  "port": 3666,
+  "device_map": {
+    "kitchenstrip": "B7:2A:C1:32:38:31:2F:15"
+  }
+}
+
